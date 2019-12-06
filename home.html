@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+    <html>
+        <head>
+            <title>Hotel Majestic - Galle</title>
+
+            <!-- meta tags -->
+            <meta charset="utf-8">
+            <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0">
+
+            <!-- importing style shets -->
+            <link rel="stylesheet" type="text/css" href="css/main.css">
+            <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+            <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+          <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css">
+
+        </head>
+
+    <body>
+
+   <!--main slider-->         
+        <section class="col-lg-12"  id="slideshow" style="background-image:url('images/home/slider.png'); width:'100%';" no-repeat>
+        <div class="row" style="text-align:center; display:inline-block;">
+         <img src="images/logos/main.png" width='30%' style="margin-top:160px;" align="center">   
+          <br>
+          <span class="banner-text"> Book a room Today!<br>
+          Sign up a free account and manage reservations easily!</span>
+          <br>
+          <a href="#" class="btn btn-warning btn-lg" role="button" 
+                                style="margin-top:30px;
+                                font-size:22px;
+                                padding:10px 40px 10px 40px;
+                                font-weight:300;
+                                box-shadow: 0 0 20px 0 rgba(0,0,0,0.4);
+                                color:#ffffff;">BOOK NOW</a> 
+          <a  class="btn btn-outline-warning btn-lg" role="button" 
+                                style="font-size:22px;
+                                margin-top:30px;
+                                margin-left:10px;
+                                padding:10px 40px 10px 40px;
+                                font-weight:300;
+                                box-shadow: 0 0 20px 0 rgba(0,0,0,0.4);
+                                color:#ffffff;"
+              onclick="document.getElementById('signup').style.display='block'">SIGN UP</a>
+          </div>
+         </section>
+
+
+ <!--user signup-->
+  <div id="signup" class="modal" style="text-align:center;">
+  
+  <form class="modal-content" action="login.php">
+      <span onclick="document.getElementById('signup').style.display='none'" class="close" title="Close Modal">&times;</span>
+      <br>
+      <h2 class="login-heading" >  <i class="fas fa-user-plus"> </i> Sign Up </h2>
+      <span>Create an account and manage your reservations easily!</span>
+    <div class="container">
+       <p class="p-label"> <i class="fas fa-signature"> </i> Name :</p>
+      <input type="text" placeholder="Enter your Name" name="usrname" required>
+      <br>
+       <p class="p-label"> <i class="fas fa-envelope"> </i> Email :</p>
+      <input type="email" placeholder="Enter your email" name="usrmail" required>
+      <br>
+       <p class="p-label"> <i class="fas fa-lock"> </i> Password :</p>
+      <input type="password" placeholder="Enter a Password" name="usrpword" required>
+      <br><input type="password" placeholder="Retype Password" name="usrpword-check" required>
+       <hr>
+       <p>Complete your profile with more Details for a conveinient searching and get  <b> relaible promotions!</b></p>
+       <br>
+       <a href="more_details.php">Add More Details </a>
+       <hr>
+      <button type="submit" class="button">Sign Up</button>
+    </div>
+     <br>
+  </form>
+</div>
+  
+
+
+  <!-- info area-->
+  <section class="info" style=" background-image:url('images/back/info.jpg'); width:'100%';" no-repeat>
+      <div class="col-lg-8" style="margin: 0 auto;">
+      <div class="row">
+      <div class="col-lg-4 all-center" style="padding:20px;">
+          <i class="fas fa-concierge-bell" style="font-size:90px;"></i>
+          <br>
+          <br>
+          <h2>
+            Best Service!
+          </h2>
+          <br>
+          <span>
+           Majestic hotels (pvt) Ltd won the Best Service award 2018(Hospitality) at Sri Lankan Service Awards.
+          </span>
+          <br>
+          <div class="tag-info">
+          <i class="fas fa-envelope icon-col" ></i>
+           <br>
+           <a href="mailto:info@hotelmejestic.lk">info@hotelmejestic.lk</a>
+          </div>
+       </div>
+        <div class="col-lg-4 all-center" style="padding:20px;">
+          <i class="fas fa-swimmer" style="font-size:90px;"></i>
+          <br><br>
+          <h2>
+            Unique Experience!
+          </h2><br>
+          <span>
+           480+ travellers worldwide recommended Majestic hotels as the best place stay; and the beginig of their remarkable explores.
+          </span>
+          <br>
+          <div class="tag-info">
+          <i class="fas fa-phone icon-col" ></i>
+           <br>
+           +(94) 71 123 4567
+          </div>
+       </div>
+        <div class="col-lg-4 all-center" style="padding:20px;">
+         <i class="fas fa-money-bill-wave" style="font-size:90px;"></i>
+          <br><br>
+          <h2>
+            Excellent Offers!
+          </h2><br>
+          <span>
+            Experience the best packages for fair prices and witness the global recognized loyality with Majestic hotels.
+          </span>
+          <br>
+          <div class="tag-info">
+          <i class="fas fa-fax icon-col"></i>
+           <br>
+           +(94) 91 134 5678
+          </div>
+       </div>
+      </div>
+      </div>    
+  </section>
+
+  <section class="rooms-1">
+               <div class="row">
+                  <div class="col-lg-8">
+                  <div id="img">
+                      <div>
+                        <img src="images/home/indoor.png" id="slide" width="100%">
+                      </div>
+                  </div>  
+                  </div>
+      
+                  <div class="col-lg-4 align-self-center">
+                           <div class="row">
+                           <div class="col-lg-8 ml-8">
+                           <h1 class="column-title" style="text-align:left;">
+                              Indoor Rooms
+                           </h1>
+                           <p>
+                              We offer a number of interior rooms fitting a number of packges 
+                              offering a brillient experince. Select among "royal","moderate","pency" and "motel" rooms. 
+                           </p>
+                            <span>
+                            <a href="#" class="btn btn-warning btn-lg" role="button" 
+                                style="font-size:20px;
+                                margin-top:20px;
+                                font-weight:300;
+                                color:#ffffff;">BOOK NOW</a>
+                            <a href="#" class="btn btn-outline-warning btn-lg" role="button" 
+                                background-color: #FF9005;
+                                style="font-size:20px;
+                                margin-top:20px;
+                                font-weight:300;
+                                color:#FF9005;">READ MORE</a>
+                            </span>
+                          </div>
+                          </div>
+                  </div>
+               </div>         
+    </section>
+
+    <section class="rooms-2">
+               <div class="row">
+                   <div class="col-lg-4 align-self-center">
+                           <div class="row">
+                           <div class="col-lg-8 ml-8">
+                           <h1 class="column-title" style="text-align:right;">
+                              Beach Kabanas
+                           </h1>
+                           <p style="text-align:right;">
+                              Tropical?? Why not visit our beach resorts. The one and only Sri Lankan Amazed 
+                              tropical Beach Kabanas.. Feel the freedom. and stay as long as you want. Enjoy the sunshine with Sea "roar"..
+                           </p>
+                            <div style="text-align:right">
+                            <div style="display:inline-block;">
+                            <a href="#" class="btn btn-warning btn-lg" role="button" 
+                                style="font-size:20px;
+                                margin-top:20px;
+                                font-weight:300;
+                                color:#ffffff;">BOOK NOW</a>
+                            <a href="#" class="btn btn-outline-warning btn-lg" role="button" 
+                                style="font-size:20px;
+                                margin-top:20px;
+                                font-weight:300;
+                                color:#FF9005;">READ MORE</a>
+                            </div>
+                            </div>
+                          </div>
+                          </div>
+                        </div>
+
+                  <div class="col-lg-8">
+                  <div id="img">
+                      <div>
+                        <img src="images/home/kabana.png" id="slide" width="100%">
+                      </div>
+                  </div>  
+                  </div
+               </div>      
+    </section>
+
+     <section class="rooms-3">
+               <div class="row">
+                  <div class="col-lg-8">
+                  <div id="img">
+                      <div>
+                        <img src="images/home/lagoon.png" id="slide" width="100%">
+                      </div>
+                  </div>  
+                  </div>
+      
+                  <div class="col-lg-4 align-self-center">
+                           <div class="row">
+                           <div class="col-lg-8 ml-8">
+                           <h1 class="column-title" style="text-align:left;">
+                              Jungle Lagoons
+                           </h1>
+                           <p>
+                              Want a different experience? An adventure.. Scary or more Wild?? Visit majestic Jungle lagoons. Dive deep into 
+                              Sri lankan world famous rainforests. Forget rest and feel the fresh air, purest water flows.. Leave the world behind you..
+                           </p>
+                            <span>
+                            <a href="#" class="btn btn-warning btn-lg" role="button" 
+                                style="font-size:20px;
+                                margin-top:20px;
+                                font-weight:300;
+                                color:#ffffff;">BOOK NOW</a>
+                            <a href="#" class="btn btn-outline-warning btn-lg" role="button" 
+                                style="font-size:20px;
+                                margin-top:20px;
+                                font-weight:300;
+                                color:#FF9005;">READ MORE</a>
+                            </span>
+                          </div>
+                          </div>
+                  </div>
+               </div>         
+    </section>
+
+  <!--pricing section-->
+  <section class="row" id="pricing">
+      <div class="container pt-5 my-5" style="background-image: url(imgs/back/packages.png)">
+        
+        <div class="row py-5 align-items-top">
+          <div class="col-12 col-sm-10 col-md-8 m-auto col-lg-4 text-left">
+            <div class="bg-gray pb-5 pt-5 pl-4 pr-4 rounded shadow">
+              <h2 class="font-weight-light">Indoor Rooms</h2>
+              <hr>
+              <p class="h2"><strong>$100.00</strong></p><p>Upwards</p>
+              <p class="h4">Rooms from economy,Business,Family and Royal pakages.</p>
+              <hr>
+              <p class="text-right"><em>Unlimited wifi</em></p>
+              <p class="text-right"><em>Swimming Pool</em></p>
+              <p class="text-right"><em>Attached Bathrooms</em></p>
+               <p class="text-right"><em>AC/ Non AC</em></p>
+               <p class="text-right"><em>Built-in TV/ Radio</em></p>
+              <p><br></p>
+              <p class="text-center pt-4"><a href="https://www.froala.com" class="btn btn-warning btn-lg" style="color:white;">Choose Plan</a></p>
+            </div>
+          </div>
+    
+          <div class="col-12 col-sm-10 col-md-8 m-auto col-lg-4 text-left pt-4 pt-lg-0">
+            <div class="bg-gray pb-5 pt-5 pl-4 pr-4 rounded shadow">
+              <h2 class="font-weight-light">Beach Kabanas</h2>
+              <hr>
+             <p class="h2"><strong>$180.00</strong></p><p>Upwards</p>
+              <p class="h4">Single Room Kabanas up to Beach houses..</p>
+              <hr>
+              <p class="text-right"><em>Unlimited wifi</em></p>
+              <p class="text-right"><em>By the sea</em></p>
+              <p class="text-right"><em>Jumbo Boat Rides</em></p>
+              <p class="text-right"><em>Surfing</em></p>
+              <p class="text-right"><em>Whale Watching</em></p>
+              <p><br></p>
+              <p class="text-center pt-4"><a href="https://www.froala.com" class="btn btn-warning btn-lg" style="color:white;">Choose Plan</a></p>
+            </div>
+          </div>
+    
+          <div class="col-12 col-sm-10 col-md-8 m-auto col-lg-4 text-left pt-4 pt-lg-0">
+            <div class="bg-gray pb-5 pt-5 pl-4 pr-4 rounded shadow">
+              <h2 class="font-weight-light">Lagoons</h2>
+              <hr>
+              <p class="h2"><strong>$200.00</strong></p><p>Upwards</p>
+              <p class="h4"> Jungle Lagoons, Tree rooms and safari arrangements.</p>
+              <hr>
+              <p class="text-right"><em>Wild Sense</em></p>
+              <p class="text-right"><em>Quiet Freedom</em></p>
+                <p class="text-right"><em>Camping</em></p>
+              <p class="text-right"><em>Jungle Safaries</em></p>
+              <p class="text-right"><em>Adventure Boat Rides</em></p>
+              <p><br></p>
+            
+    
+              <p class="text-center pt-4"><a href="https://www.froala.com" class="btn btn-warning btn-lg" style="color:white;">Choose Plan</a></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  <!-- contact form-->  
+ <section class="fdb-block">
+      <div class="container">
+        <div class="row text-center justify-content-center">
+          <div class="col-12 col-md-8 col-lg-7">
+            <h1>Contact Us</h1>
+            <p class="lead">Never hesitate to leave a message.Subscribe and contact us for any clarification.Your feedback is worth us millions.</p>
+          </div>
+        </div>
+    
+        <div class="row pt-4">
+          <div class="col-12 col-md-6">
+            <iframe class="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2848.8444388087937!2d26.101253041406952!3d44.43635311654287!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40b1ff4770adb5b7%3A0x58147f39579fe6fa!2zR3J1cHVsIFN0YXR1YXIgIkPEg3J1yJthIEN1IFBhaWHIm2Ui!5e0!3m2!1sen!2sro!4v1507381157656"
+              width="100%" height="280" style="border:0" allowfullscreen=""></iframe>
+          </div>
+    
+          <div class="col-12 col-md-6 pt-5 pt-md-0">
+            <form>
+              <div class="row">
+                <div class="col">
+                  <input type="email" class="form-control" placeholder="Enter email">
+                </div>
+              </div>
+    
+              <div class="row">
+                <div class="col">
+                  <input type="text" class="form-control" placeholder="Subject" >
+                </div>
+              </div>
+              <div class="row">
+                <div class="col">
+                  <textarea class="form-control mm" name="message" rows="3" placeholder="How can we help?"></textarea>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col">
+                  <button type="submit" class="btn btn-warning btn-lg"
+                  style="font-size:20px;
+                                margin-top:20px;
+                                font-weight:bold;
+                                color:#ffffff;">Submit</button>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!--footer--> 
+<section class="footer mt-4">
+      <div class="container">
+        <div class="row text-center mt-4">
+          <div class="col-lg-4">
+            <h3>Majestic Hotels (Pvt.)Ltd</h3>
+          </div>
+           <div class="col-lg-4">
+            <h5>115B,Main Street,Galle,Sri Lanka<br><b>+(94) 71 123 4567<b></h5>
+          </div>
+           <div class="col-lg-4">    
+            <p class="lead" style="display:inline-block;">     
+              <a href="https://twiiter.com/majestic" class="mx-2"><i class="fab fa-twitter" aria-hidden="true"></i></a>
+              <a href="https://www.fb.com/majestichotels" class="mx-2"><i class="fab fa-facebook" aria-hidden="true"></i></a> 
+              <a href="https://www.instagram.com/majhotels" class="mx-2"><i class="fab fa-instagram" aria-hidden="true"></i></a>    
+            </p>
+          </div>
+        </div>    
+      </div>
+</section>
+
+
+<script src="js/main.js"></script>
+
+  </body>
+</html>

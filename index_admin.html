@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+    <html>
+        <head>
+            <title>Hotel Majestic - Galle - Admin Panel</title>
+            <link rel="icon" href="images/logos/logo-mini.png">
+            <!-- meta tags -->
+            <meta charset="utf-8">
+            <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0">
+
+            <!-- importing style shets -->
+           <link rel="stylesheet" type="text/css" href="css/main.css">
+            <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+            <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+          <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css">
+           <link rel="stylesheet" href="css/animate.css">
+          <style>
+             html, body {margin: 0; height: 100%; overflow: hidden;}
+              a:hover, a:visited, a:link, a:active {text-decoration: none;}
+          </style>
+           
+        </head>
+
+    <body style="background-color:#333;">
+ <!--header-->
+ <div class="row">
+    <header>
+      <div class="topnav" id="navbar" style="position:fixed; width:100%; floar:right;">
+
+        <a href="#home" class="nav-logo">
+        <img src="images/logos/logo-mini.png" style="height:30px; padding-left:20px;">
+        </a>
+
+        <div class="nav-right">
+          
+        
+          <a class="nav-bt" href="#home" style="color:#FF9005;"
+          role="button" onclick="document.getElementById('login').style.display='block'">
+          <i class="fas fa-sign-in-alt"></i>
+          Log In
+          </a>
+          <a class="nav-bt" href="user_mgmt_admin.html" target="myiframe" style="color:#FF9005;"
+          role="button" >
+          <i class="fas fa-user-plus"></i>
+          Create User
+          </a>
+            <a class="nav-bt" href="home.html" role="button" class="active" target="myiframe" >
+          <i class="fas fa-home"></i>
+          View Home Page</a>
+          <a href="#about">
+          <i class="fab fa-facebook"></i>
+          </a>
+          </a>
+          <a href="#about">
+          <i class="fab fa-twitter"></i>
+          </a>
+          </a>
+          <a href="#about">
+          <i class="fab fa-instagram"></i>
+          </a>
+          <a href="javascript:void(0);" style="font-size:20px;" class="icon" onclick="dropDown()">&#9776;</a>
+        </div>
+      </div>
+    <header>
+</div>
+<!--sidebar-->
+   <div class="row usr-row ">
+  <div id="sidebar" class="col-lg-2 wow slideInLeft" style="padding:0px; margin:0px;">
+        <div class="img-div" style="text-align:center;">
+           <img class="usr-img" src="images/usr.jpg" >
+        </div>
+         <div class="u-name">
+          Admin
+          <hr>
+        </div>
+
+          <a href="dashboard.html"  role="button" target="myiframe"> 
+         <div class="sidebar-btn active">
+           <i class="fas fa-tachometer-alt"></i>
+           Dashboard
+        </div>
+        </a>
+
+      <a href="room_admin.html" role="button"  target="myiframe">
+      <div class="sidebar-btn ">
+            <i class="fas fa-home"></i>
+           Room Management
+        </div>
+      </a>
+
+      <a href="user_mgmt_admin.html" role="button"  target="myiframe">
+      <div class="sidebar-btn ">
+           <i class="fas fa-user-tie"></i>
+           User Management 
+        </div>
+        </a>
+
+        <a href="profile_admin.html" role="button"  target="myiframe"> 
+           <div class="sidebar-btn ">
+           <i class="fas fa-user-lock"></i>
+           Admin Profile
+        </div>
+         </a>
+
+    </div>
+
+
+
+    <!--host page-->
+    <div class="column" style="padding:0px; margin:0px;">
+    <iframe class="ex-frame" src="dashboard.html" name="myiframe"></iframe>
+    </div>
+  </div>
+
+
+<!--user login-->
+  <div id="login" class="modal" style="text-align:center;">
+  
+  <form class="modal-content" action="login.php">
+      <span onclick="document.getElementById('login').style.display='none'" class="close" title="Close Modal">&times;</span>
+      <br>
+      <h2 class="login-heading" >  <i class="fas fa-sign-in-alt"> </i> Log In </h2>
+    <div class="container">
+      <input type="text" placeholder="Enter Username or email" name="uname" required>
+      <br>
+      <input type="password" placeholder="Enter Password" name="pword" required>
+       <br> 
+      <button type="submit" class="button">Login</button>
+    </div>
+     <br>
+  </form>
+</div>
+
+ 
+<!--external page-->
+
+
+<script src="js/main.js"></script>
+
+<script src="js/wow.min.js"></script>
+<script>
+new WOW().init();
+</script>
+
+  </body>
+</html>

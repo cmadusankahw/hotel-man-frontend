@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+    <html>
+        <head>
+            <title>Hotel Majestic - Galle</title>
+
+            <!-- meta tags -->
+            <meta charset="utf-8">
+            <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0">
+
+            <!-- importing style shets -->
+            <link rel="stylesheet" type="text/css" href="css/main.css">
+            <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+            <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+          <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css">
+           <link rel="stylesheet" href="css/animate.css">
+
+        </head>
+
+    <body style="background-color:#333;">
+ <!--header-->
+ <div class="row">
+    <header>
+      <div class="topnav" id="navbar" style="position:fixed; width:100%; floar:right;">
+
+        <a href="#home" class="nav-logo">
+        <img src="images/logos/logo.png" style="font-size:30px;">
+        </a>
+
+        <div class="nav-right">
+          
+          <a href="first.html" class="active">
+          <i class="fas fa-home"></i>
+          Home</a>
+          <a href="index.html">
+          <i class="fab fa-wpexplorer" ></i>
+          Explore
+          </a>
+          <a href="about.html" target="myiframe">
+          <i class="fas fa-phone" ></i>
+          Contact
+          </a>
+          <a href="#home" style="color:#FF9005;"
+          role="button" onclick="document.getElementById('login').style.display='block'">
+          <i class="fas fa-sign-in-alt"></i>
+          Log In
+          </a>
+          <a href="#home" style="color:#FF9005;"
+          role="button" onclick="document.getElementById('signup').style.display='block'">
+          <i class="fas fa-user-plus"></i>
+          Sign Up
+          </a>
+          </a>
+          <a href="#about">
+          <i class="fab fa-facebook"></i>
+          </a>
+          </a>
+          <a href="#about">
+          <i class="fab fa-twitter"></i>
+          </a>
+          </a>
+          <a href="#about">
+          <i class="fab fa-instagram"></i>
+          </a>
+          <a href="javascript:void(0);" style="font-size:20px;" class="icon" onclick="dropDown()">&#9776;</a>
+        </div>
+      </div>
+    <header>
+</div>
+<!--sidebar-->
+   <div class="row usr-row">
+  <div class="col-lg-2 wow slideInLeft" style="padding:0px; margin:0px; display:none;">
+        <div class="img-div" style="text-align:center;">
+           <img class="usr-img" src="images/usr.jpg" >
+        </div>
+         <div class="u-name">
+          Chiran M.
+          <hr>
+        </div>
+
+         <div class="sidebar-btn active">
+           <a> <i class="fab fa-instagram"></i>
+           Explore </a>
+        </div>
+
+      <div class="sidebar-btn ">
+           <a> <i class="fab fa-instagram"></i>
+           My Bookings </a>
+        </div>
+
+      <div class="sidebar-btn ">
+           <a> <i class="fab fa-instagram"></i>
+           Cancel Request </a>
+        </div>
+
+           <div class="sidebar-btn ">
+           <a> <i class="fab fa-instagram"></i>
+           My Profile </a>
+        </div>
+
+    </div>
+
+
+
+    <!--host page-->
+    <div class="column" style="padding:0px; margin:0px;">
+    <iframe class="ex-frame" src="home.html" name="myiframe"></iframe>
+    </div>
+  </div>
+
+
+<!--user login-->
+  <div id="login" class="modal" style="text-align:center;">
+  
+  <form class="modal-content" action="login.php">
+      <span onclick="document.getElementById('login').style.display='none'" class="close" title="Close Modal">&times;</span>
+      <br>
+      <h2 class="login-heading" > Log In </h2>
+    <div class="container">
+      <input type="text" placeholder="Enter Username or email" name="uname" required>
+      <br>
+      <input type="password" placeholder="Enter Password" name="pword" required>
+       <br> 
+      <button type="submit" class="button">Login</button>
+    </div>
+     <br>
+  </form>
+</div>
+
+ <!--user signup-->
+  <div id="signup" class="modal" style="text-align:center;">
+  
+  <form class="modal-content" action="login.php">
+      <span onclick="document.getElementById('signup').style.display='none'" class="close" title="Close Modal">&times;</span>
+      <br>
+      <h2 class="login-heading" > Sign Up </h2>
+      <span>Create an account and manage your reservations easily!</span>
+    <div class="container">
+      <input type="text" placeholder="Enter your Name" name="usrname" required>
+      <br>
+      <input type="email" placeholder="Enter your email" name="usrmail" required>
+      <br>
+      <input type="password" placeholder="Enter a Password" name="usrpword" required>
+       <br> 
+      <input type="password" placeholder="Retype Password" name="usrpword-check" required>
+       <hr>
+       <p>You may add payment details at first stage. <b> We won't charge you unless you make a reservation</b></p>
+       <br>
+       <a href="/payment.php">Add Payment Details </a>
+       <hr>
+      <button type="submit" class="button">Sign Up</button>
+    </div>
+     <br>
+  </form>
+</div>
+<!--external page-->
+
+
+<script src="js/main.js"></script>
+
+<script src="js/wow.min.js"></script>
+<script>
+new WOW().init();
+</script>
+
+  </body>
+</html>
